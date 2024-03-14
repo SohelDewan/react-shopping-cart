@@ -17,3 +17,17 @@
   display: flex;
   justify-content: space-around;
 }
+.cart-container{
+  padding: 8px;
+  text-align: center;
+}
+.cart-container h1{
+  background: #000;
+  color: aliceblue;
+  padding: 4px;
+  border-radius: 12px;
+}
+.cart-title-price{
+  display: flex;
+  justify-content: space-around;
+}

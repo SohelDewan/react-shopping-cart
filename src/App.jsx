@@ -1,6 +1,7 @@
 import {useEffect, useState } from 'react'
 
 import './App.css';
+import SingleProduct from './SingleProduct';
 
 function App() {
   const [products, setProducts] = useState([]);
@@ -11,24 +12,25 @@ function App() {
     .then(data => setProducts(data))
   },[])
   // console.log(products);
+  const handleCart = (p)=>{
+    console.log(p);
+  }
   return (
     <>
+    <h2 className='text-5xl text-center'>Your choice your products</h2>
       <div className="main-container">
         <div className="cards-container">
-          <div className="card">
-            <img className='card-img' src='https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg'></img>
-            <h1>fakestoreapi</h1>
-            <p>Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday</p>
-            <div className='card-footer'>
-              <h3>35$</h3>
-              <button className='add-btn'>
-                Add to card
-              </button>
-            </div>
-          </div>
+        {
+          products.map(myMap =><SingleProduct product={myMap} handleCart={handleCart}></SingleProduct> )
+        }
+          
         </div>
         <div className="cart-container">
-          <h1>This is cart</h1>
+          <h1 className='text-center text-3xl'>This is cart</h1>
+          <div className='cart-title-price'>
+            <h3>Title</h3>
+            <h3>Price</h3>
+          </div>
         </div>
       </div>
 
