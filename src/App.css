@@ -1,0 +1,19 @@
+.main-container{
+  display: flex;
+  justify-content: space-around;
+}
+.cart-container{
+  width: 350px;
+  box-shadow: 4px 4px 8px gray;
+}
+.card{
+  width: 320px;
+  padding: 10px;
+}
+.card-img{
+  width: 300px;
+}
+.card-footer{
+  display: flex;
+  justify-content: space-around;
+}
