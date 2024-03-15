@@ -1,7 +1,7 @@
 // import React from "react";
 
 const SingleProduct = ({product, handleCart}) => {
-    console.log(handleCart);
+    // console.log(handleCart);
   return (
     <div>
       <div className="card">
@@ -9,7 +9,7 @@ const SingleProduct = ({product, handleCart}) => {
           className="card-img"
           src={product.image}
         ></img>
-        <h1>{product.title}</h1>
+        <h3>{product.title}</h3>
         <p>
           {product.description}
         </p>

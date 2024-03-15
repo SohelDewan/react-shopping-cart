@@ -2,6 +2,12 @@
   display: flex;
   justify-content: space-around;
 }
+.title{
+  text-align: center;
+  font-size: 48px;
+  font-weight: bold;
+  color:green
+}
 .cart-container{
   width: 350px;
   box-shadow: 4px 4px 8px gray;
@@ -11,7 +17,7 @@
   padding: 10px;
 }
 .card-img{
-  width: 300px;
+  width: 200px;
 }
 .card-footer{
   display: flex;
@@ -27,7 +33,7 @@
   padding: 4px;
   border-radius: 12px;
 }
-.cart-title-price{
+.cart-title-price , .cart-info{
   display: flex;
   justify-content: space-around;
 }
